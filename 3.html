@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <title>나의 꿈</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="button" value="night" onclick="
+   var target = document.querySelector('body')
+   if(this.value === 'night'){
+     target.style.backgroundColor = 'black';
+     target.style.color = 'white';
+     this.value = 'day';
+
+     var alist = document.querySelectorAll('a');
+     var i = 0;
+     while(i < alist.length){
+       alist[i].style.color = 'powderblue';
+       i= i + 1;
+     }
+ } else {
+   target.style.backgroundColor = 'white';
+   target.style.color = 'black';
+   this.value = 'night';
+
+   var alist = document.querySelectorAll('a');
+   var i = 0;
+   while(i < alist.length){
+     alist[i].style.color = 'blue';
+     i = i + 1;
+   }
+ }
+  ">
+  <h1><a href="index.html">발표문</a></h1>
+ <div id="grid"><div>
+  <ul>
+    <li><strong><a href="1.html">나의 가족 소개서</a></strong></li>
+    <li><strong><a href="2.html">우리 동네 소개서</a></strong></li>
+    <li><strong><a href="3.html">나의 꿈</a></strong></li><br><br>
+  </ul></div><div id="coding">
+  <h2>나의 꿈</h2>
+  <strong>저의 <u>꿈</u></strong>을 소개합니다!<br><br>
+  <strong>저의 <u>꿈</u></strong>은 프로그래머입니다. 프로그래머란 앱,웹 등등 어떠한 프로그램을
+  개발하는 사람을 말합니다. 저는 저만의 웹이나 앱을 개발하여
+  사람들에게 제가 만든 프로그램을 알리고싶습니다. 그리고 나중에는
+  직접 프로그래머가 되기위한 방법을 담은 강의도 만들고 싶습니다. 저는 나중에 꼭
+  커서 멋있는 프로그래머가 될것입니다. 이상으로 <strong>저의 <u>꿈</u></strong> 발표를 마치겠습니다.<br><br>
+  <img src="프로그래머.jpg" width="200"><br><br></div>
+ </div>
+</body>
+</html>
